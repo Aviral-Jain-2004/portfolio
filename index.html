@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviral Jain</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/hD6yrb0/ajlogo2-img.png">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <img src="https://i.ibb.co/hD6yrb0/ajlogo2-img.png" alt="">
+        <h1>Portfolio</h1>
+        <ul>
+            <li><a href="">Home <span></span></a></li>
+            <li><a href="#about">About <span></span></a></li>
+            <li><a href="#skills">Skills <span></span></a></li>
+            <li><a href="#projects">Projects <span></span></a></li>
+            <li><a href="#achievements">Achievements <span></span></a></li>
+            <li><a href="#contact">Contact <span></span></a></li>
+        </ul>
+    </nav>
+
+    <section id="intro">
+        <article>
+            <span id="text1">Hi, I'm</span>
+            <span id="text2">Aviral Jain</span>
+        </article>
+        <img src="https://www.boxx.com/Files/Images/engineering-vector.png" alt="" >
+    </section>
+
+    <section id="about" onmouseover="func(this)" onmouseout="func2(this)">
+        <h2 >About me</h2>
+        <p >I am a student at VIT BHOPAL university <br>
+           Persuing BTech
+           <br>Currently, a 3rd year Student
+           <br>Completed 10th from KV Barkuhi
+           <br>Completed 12th from SGIS Bangalore
+        </p>
+    </section>
+
+    <section id="skills" onmouseover="func(this)" onmouseout="func2(this)">
+        <h2>Skills</h2>
+        <div id="imgBox" class="container">
+            <img style="background-color: white; padding: 5px;" src="https://piptocode.github.io/_images/logo-html5.png" alt="">
+            <img src="https://i.pinimg.com/originals/3c/2a/ad/3c2aadf4b1aeffa2bc631eb2037a2496.jpg" alt="">
+            <img src="https://ih1.redbubble.net/image.316760221.5828/flat,800x800,075,f.jpg" alt="">
+            <img src="https://pngimg.com/uploads/php/php_PNG43.png" alt="">
+            <img src="https://pngimg.com/uploads/mysql/mysql_PNG23.png" alt="">
+            <img src="https://i.pinimg.com/originals/92/60/dd/9260dd459aa4566cfa25e86a3f10ea1b.png" alt="">
+            <img src="https://logos-download.com/wp-content/uploads/2019/06/Django_Logo.png" alt="">
+            <img src="https://static.javatpoint.com/tutorial/flask/images/flask-tutorial.png" alt="">
+            <img src="https://www.pngitem.com/pimgs/m/174-1746684_java-java-logo-black-png-transparent-png.png" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/e3/05/1b/e3051b03-d132-df20-c4be-980616c45b02/source/1200x630bb.jpg" alt="">
+            <img src="https://coderaky.com/images/icons/leetcode.png" alt="">
+            <img src="https://pngimg.com/uploads/github/github_PNG67.png" alt="">
+        </div>
+    </section>
+
+    <section id="projects" onmouseover="func(this)" onmouseout="func2(this)">
+        <h2>Projects</h2>
+        <div class="container">
+            <div class="card" onmouseover="func3(this)" onmouseout="func4(this)">
+                <h3>Medibot</h3>
+                <img src="https://research.aimultiple.com/wp-content/uploads/2021/03/healthcare-design-1.jpg" alt="">
+                <p>
+                    Integrating multiple features into a single user friendly platform. Techs used are <strong>Web dev, Flask, Machine Learning.</strong>
+                </p>
+            </div>
+
+            <div class="card" onmouseover="func3(this)" onmouseout="func4(this)">
+                <h3>Stock market prediction</h3>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.gjd_cZWhPoMAogRans8afAHaFC&pid=Api&P=0&h=180" alt="">
+                <p>
+                    A web service for stock market prediction. Tech used are <strong>Web dev, Django, ML(LSTM algo).</strong>
+                </p>
+            </div>
+
+            <div class="card" onmouseover="func3(this)" onmouseout="func4(this)">
+                <h3>AR library</h3>
+                <img src="https://baltic.art/images/uploads/faa123118f36efee5e93c9b68ad054bf.jpg" alt="">
+                <p>
+                    A augmented reality virtual system for library. Tech used are <strong>Web dev, AR.js, Three</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" onmouseover="func(this)" onmouseout="func2(this)">
+        <h2 >Achievements</h2>
+        <ul >
+            <li>Participated in GFG (geek for geeks) contests</li>
+            <li>Top 1% in NPTEL cloud computing</li>
+            <li>Solved 200+ leetcode questions (DSA with JAVA)</li>
+            <li>Final round at project Expo in Industry Conclave 1, VIT Bhopal</li>
+            <li>Member of Stats-O-Locked club</li>
+            <li>Badges and Certificates: </li>
+        </ul>
+        <div id="certBox">
+            <img src="https://assets.leetcode.com/static_assets/marketing/2024-50.gif" alt="">
+            <img src="https://assets.leetcode.com/static_assets/marketing/2024-100-new.gif" alt="">
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQE5fEr1geduog/feedshare-shrink_800/feedshare-shrink_800/0/1715599261379?e=1726704000&v=beta&t=Kt-zv1iRjkIaOok59VW6rvMpTV8PKWAR3HJLVOoKvCM" alt="">
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQHF9GTOUrWH2w/feedshare-shrink_800/feedshare-shrink_800/0/1723039715745?e=1726704000&v=beta&t=G1-Y-efhdYRk2c6zdKaFdirnVtnrt6OXbybTNehqXwE" alt="">
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQFjErZ7p-UQkQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1702908600053?e=1726704000&v=beta&t=O8tSPfgCOK-hbx7KDhr_P79g_X2MT3u5A0JSlutZJ0k" alt="">
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQE3_1jgxVpUWA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1684739634842?e=1726704000&v=beta&t=XhvyHPFfKpqNEWcWZNjjjrHMfzl7CmEJZxLnMKH_7o4" alt="">
+            <img src="https://media.licdn.com/dms/image/v2/C4D22AQFqM0JHa87v0Q/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1672797502018?e=1726704000&v=beta&t=P-c3Uo3m8H0scKlvP8gH68Mqjc2VwGXaAno93DBcm3A" alt="">
+            <img src="https://media.licdn.com/dms/image/D4D22AQH0gHaRzs5G5g/feedshare-shrink_2048_1536/0/1710988087824?e=1726704000&v=beta&t=Y_ufNV4bBiYZg2e-4dNBimwjywBABMHbnYs0_R3PCvk" alt="">
+            <img src="https://media.licdn.com/dms/image/v2/C4D22AQHtT1PEOXGFIw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1672825091518?e=1726704000&v=beta&t=1O5uvp-tvh_BnkokAhZrOVEjLu8GQfgpSEOBmDMsXFM" alt="">
+            <img src="https://media.licdn.com/dms/image/C4D22AQF6oiv3HlcatA/feedshare-shrink_2048_1536/0/1672914532550?e=1726704000&v=beta&t=3Kp87rp2fU-2ARRZy0qf5TBNI3tyDQtF_ZxdbIMohuQ" alt="">
+        </div>
+    </section>
+
+    <section id="contact" onmouseover="func(this)" onmouseout="func2(this)">
+        <h2>Contact me</h2>
+        <div class="container">
+            <a href="mailto:jainaviral2004@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a target="_blank" href="https://github.com/Aviral-Jain-2004"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/aviral-jain-549465251"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="tel:+919131284281"><i class="fa-duotone fa-solid fa-phone"></i></a>
+            <a target="_blank" href="https://www.hackerrank.com/profile/aviraljain2022"><i class="fa-brands fa-hackerrank"></i></a>
+            <a target="_blank" href="https://leetcode.com/Aviral_Jain_2004"><span><img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3270180/leetcode-icon-md.png" alt=""></span></a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024. Portfolio by Aviral Jain.
+    </footer>
+</body>
+</html>
