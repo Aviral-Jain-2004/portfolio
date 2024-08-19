@@ -1,0 +1,291 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(15, 15, 15);
+    color: yellow;
+    font-size: 1.5rem;
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    color: aqua;
+    text-shadow: 0px 0px 10px white;
+    font-family: "Rubik Scribble", system-ui;
+}
+
+/* Animations */
+@keyframes text_anime {
+    0%{
+        text-shadow: 0px 0px black;
+        margin: -50px;
+        transform: scale(2);
+        color: black;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -20px;
+    }
+    75%{
+        text-shadow: 0px 0px white;
+        color: black;
+        letter-spacing: 15px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@keyframes mouse_anime {
+    0%{
+        border-radius: 5px;
+        box-shadow: inset 5px 5px 15px white, inset -5px -5px 5px white;
+    }
+    50%{
+        box-shadow: inset 5px 5px 15px aqua, inset -5px -5px 5px aqua;
+    }
+    100%{
+        border-radius: 5px;
+        box-shadow: inset 5px 5px 15px white, inset -5px -5px 5px white;
+    }
+}
+
+/* Common classes */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section{
+    margin: 30px;
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+}
+nav > img{
+    height: 70px;
+}
+nav > h1{
+    font-family: "Rubik doodle shadow" ,"Rubik mono one", 'Times New Roman', Times, serif;
+    width: 10%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+    width: 80%;
+    justify-content: end;
+    align-items: center;
+}
+nav > ul > li{
+    list-style: none;
+    padding: 5px;
+}
+nav > ul > li > a{
+    font-family: serif;
+    position: relative;
+    color: #4f4f4f;
+    text-decoration: none;
+    padding: 0.75rem;
+    transition: 0.4s;
+    border-radius: 20%;
+}
+nav > ul > li > a:hover{
+    color: aqua;
+    border-bottom: 2px solid pink;
+}
+
+/* INTRO */
+#intro{
+    display: flex;
+    background-color: rgb(15, 15, 15);
+}
+#intro > article{
+    width: 40%;
+    font-size: 4rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+#intro > article > span{
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: "Foldit", sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 50px aqua;
+    display: block;
+    color: white;
+    animation: text_anime 2s;
+}
+#text1{
+    position: relative;
+    animation: text_anime 2s reverse;
+}
+#intro > img{
+    width: 60%;
+}
+
+/* ABOUT */
+#about{
+    z-index: 2;
+    background-color: rgb(15, 15, 15);
+}
+#about > p{
+    text-align: center;
+    padding: 0.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+
+/* Skills */
+#skills{
+    z-index: 4;
+}
+
+#skills > .container > img{
+    width: 15%;
+    margin: 20px;
+    transition: transform 0.4s;
+}
+
+#skills > .container > img:hover{
+    transform: scale(1.1);
+}
+
+/* Projects */
+#projects{
+    z-index: 6;
+    background-color: rgb(15, 15, 15);
+}
+
+.card{
+    color: whitesmoke;
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 5px;
+    border: 15px groove gray;
+    transition: 0.4s;
+}
+
+.card:hover{
+    .card > img{
+        display: none;
+    }
+    .card > p{
+        display: block;
+    }
+    color: aqua;
+    border-radius: 40px;
+    transform: scale(0.98);
+}
+
+.card > img{
+    width: 80%;
+    height: 200px;
+}
+
+.card > p{
+    display: none;
+    width: 80%;
+    padding: 5px 0px;
+}
+
+/* Achievements */
+#achievements{
+    z-index: 8;
+    background-color: rgb(15, 15, 15);
+    padding: 40px;
+}
+
+#achievements > ul{
+    text-align: center;
+    color: whitesmoke;
+}
+
+#certBox {
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    background-color: black;
+}
+
+#certBox img {
+    height: 250px; /* Adjust image height as needed */
+    margin: 10px; /* Adjust margin as needed */
+}
+
+#certBox::-webkit-scrollbar {
+    width: 10px; /* Scrollbar width */
+}
+
+#certBox::-webkit-scrollbar-thumb {
+    background-color: whitesmoke; /* Thumb color */
+    border-radius: 10px; /* Thumb border radius */
+}
+
+#certBox::-webkit-scrollbar-track {
+    border: 2px solid aqua;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Contact */
+#contact{
+    z-index: 10;
+    background-color: rgb(15, 15, 15);
+}
+
+#contact > .container{
+    justify-content: center;
+}
+#contact > .container > a > i{
+    font-size: 40px;
+    padding: 1rem;
+    color: whitesmoke;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+#contact > .container > a > i:hover{
+    color: blue;
+    background-color: white;
+}
+#contact > .container > a > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+#contact > .container > a > span > img{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    transform: 0.2s;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#contact > .container > a > span:hover{
+    background-color: white;
+}
+
+#contact > .container > a > span:hover > img{
+    background-color: blue;
+}
+
+/* footer */
+footer{
+    text-align: center;
+}
